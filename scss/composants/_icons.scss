@@ -1,0 +1,26 @@
+.fa-location-dot:before, .fa-map-marker-alt:before {
+    margin-left: -20px;
+}
+
+.fa-mobile-screen-button:before, .fa-list:before, .fa-store:before {
+    padding-right: 25px;
+}
+
+.icon__item {
+    padding-right: 20px;
+}
+
+.heart {
+    font-size: 25px;
+}
+
+.heart:hover {
+    background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 25px;
+}

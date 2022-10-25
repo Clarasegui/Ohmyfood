@@ -1,0 +1,9 @@
+.restaurants {
+    background-color: $background__color;
+}
+
+.restaurants__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

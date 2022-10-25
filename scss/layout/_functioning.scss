@@ -1,0 +1,25 @@
+.functioning__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    padding-bottom: 60px;
+}
+
+.functioning__item {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 30px;
+    box-shadow: 7px 8px 10px -10px #a3a3a3;
+	background-color: $background__color;
+	border-radius: 12px;
+	cursor: pointer;
+	color: #666666;
+    padding: 20px 42px 16px 3px;
+	text-decoration: none;
+    &:hover {
+        background-color: $background__color__hover;
+    }
+}

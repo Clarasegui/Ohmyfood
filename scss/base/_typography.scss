@@ -1,0 +1,82 @@
+@import '../utils/variables';
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('../fonts/Roboto-Regular') format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url('../fonts/Roboto-Thin') format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url('../fonts/Roboto-Medium') format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('../fonts/Roboto-Bold') format('truetype');
+}
+
+@font-face {
+    font-family: "Shrikhand-Regular";
+    src: url('../fonts/Shrikhand-Regular') format('truetype');
+}
+
+
+body {
+    margin: 0;
+    font-family: $typo__regular;
+    color: $text__color--primary
+}
+
+h1 {
+    margin: 20px 0 20px 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+    padding: $h2__padding;
+}
+
+.h2__reservation {
+    text-align: center;
+    padding-top: 30px;
+}
+
+h3 {
+    color: $text__color--primary;
+    text-decoration: none;
+    font-size: 15px;
+    margin: $h3__margin;
+}
+
+h3:link {
+    color: $text__color--primary;
+    text-decoration: none;
+}
+
+a {
+    color: $text__color--primary;
+    text-decoration: none;
+}
+
+.localisation__text {
+    font-family: $typo__bold;
+    font-size: 16px;
+    color: #353535;
+}
+
+.functioning__text {
+    font-family: $typo__medium;
+    color: $text__color--primary;
+    padding-left: 45px;
+}
+
+.card__restaurant__localisation {
+    font-size: 13px;
+    margin: $cardrestaurant__localisation__margin;
+}
+
