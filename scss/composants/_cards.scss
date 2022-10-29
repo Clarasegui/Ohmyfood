@@ -5,11 +5,23 @@
     background-color: $background__color--light;
     border-radius: 20px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card__restaurant:link {
-    color: $text__color--primary;
-    text-decoration: none;
+    & img {
+        object-fit: cover;
+        width: 330px;
+        height: 151px;
+        object-position: center;
+        border-radius: 20px 20px 0px 0px;
+    }
+    & .card__restaurant__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+    & link {
+        color: $text__color--primary;
+        text-decoration: none;
+    }
 }
 
 .new__tag {
@@ -22,19 +34,4 @@
     width: 90px;
     height: 30px;
     margin: $newtag__margin;
-}
-
-div.card__restaurant > img {
-    object-fit: cover;
-    width: 330px;
-    height: 151px;
-    object-position: center;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.card__restaurant__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
 }

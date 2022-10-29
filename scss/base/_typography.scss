@@ -4,6 +4,7 @@
     font-family: "Roboto-Regular";
     src: url('../fonts/Roboto-Regular') format('truetype');
 }
+
 @font-face {
     font-family: "Roboto-Thin";
     src: url('../fonts/Roboto-Thin') format('truetype');
@@ -24,15 +25,14 @@
     src: url('../fonts/Shrikhand-Regular') format('truetype');
 }
 
-
-body {
-    margin: 0;
-    font-family: $typo__regular;
-    color: $text__color--primary
-}
+/* TITRES */
 
 h1 {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 15px 0;
+}
+
+.h1__menu {
+    margin: 20px 0 15px 0;
 }
 
 h2 {
@@ -44,6 +44,10 @@ h2 {
 .h2__reservation {
     text-align: center;
     padding-top: 30px;
+}
+
+.h2__menu {
+    font-family: $typo__menu__title;
 }
 
 h3 {
@@ -58,21 +62,36 @@ h3:link {
     text-decoration: none;
 }
 
+.h3__menu {
+    font-family: "Roboto-Thin";
+    color: #7e7e7e;
+    border-bottom: 3px solid #99E2D0;
+    width: 37px;
+    margin-top: 40px;
+    padding: 0 0 6px;
+    font-size: 15px;
+}
+
+h4 {
+    display: block;
+    font-family: $typo__bold;
+    color: $text__color--primary;
+    margin: 0 0 0 10px;
+}
+
+/* LIENS */
+
 a {
     color: $text__color--primary;
     text-decoration: none;
 }
 
-.localisation__text {
+/* PAGE D'ACCUEIL */
+
+.city__text {
     font-family: $typo__bold;
     font-size: 16px;
     color: #353535;
-}
-
-.functioning__text {
-    font-family: $typo__medium;
-    color: $text__color--primary;
-    padding-left: 45px;
 }
 
 .card__restaurant__localisation {
@@ -80,3 +99,11 @@ a {
     margin: $cardrestaurant__localisation__margin;
 }
 
+/* PAGES MENUS */
+
+.menu__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -28px 0 10px;
+}

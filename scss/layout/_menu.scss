@@ -1,0 +1,28 @@
+@import '../utils/variables';
+
+.menu {
+    position: relative;
+    top: 225px;
+    background-color: $background__color;
+    border-radius: 40px 40px 0 0;
+}
+
+.menu__container {
+    width: 100%
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 315px;
+    height: 30px;
+    margin: 15px;
+    box-shadow: 7px 8px 10px -10px #a3a3a3;
+	background-color: $background__color--light;
+	border-radius: 12px;
+	cursor: pointer;
+	color: #666666;
+    padding: 20px 42px 16px 3px;
+	text-decoration: none;
+}

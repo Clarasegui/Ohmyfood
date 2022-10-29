@@ -1,0 +1,8 @@
+@import '../utils/variables';
+
+body {
+    margin: 0;
+    font-family: $typo__regular;
+    color: $text__color--primary;
+    scroll-behavior: smooth;
+}

@@ -2,16 +2,22 @@
     margin-left: -20px;
 }
 
-.fa-mobile-screen-button:before, .fa-list:before, .fa-store:before {
-    padding-right: 25px;
-}
-
 .icon__item {
     padding-right: 20px;
 }
 
+.fa-mobile-screen-button, .fa-list, .fa-store {
+    color: #666666;
+    margin-left: 20px;
+    }
+
+.fa-mobile-screen-button:hover {
+    color: $color__primary;
+}
+
 .heart {
     font-size: 25px;
+
 }
 
 .heart:hover {
@@ -23,4 +29,16 @@
     -moz-text-fill-color: transparent;
     font-weight: 900;
     font-size: 25px;
+}
+
+.fa-arrow-left:before {
+    padding-left: 20px;
+}
+
+.fa-utensils:before {
+    margin-right: 0.85rem;
+}
+
+.fa-handshake-angle:before {
+    margin-right: 0.55rem;
 }

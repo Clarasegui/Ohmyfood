@@ -1,4 +1,4 @@
-.localisation {
+.city {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,4 +6,14 @@
     height: 50px;
     background-color: $background__color--dark;
     box-shadow: inset 0px 6px 13px -6px rgba(0,0,0,0.31)
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.img__restaurant__header {
+    position: absolute;
+    width: 106%
 }
