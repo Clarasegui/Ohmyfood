@@ -2,3 +2,17 @@
     max-width: 768px;
     margin: 0;
 }
+
+@media screen and (max-width: 992px) {
+    .bloc__page {
+        max-width: 992px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bloc__page {
+        max-width: 1400px;
+        margin: 0;
+    }
+}

@@ -1,22 +1,7 @@
-.btn__explore {
-    box-shadow: -1px 4px 6px -2px #999999;
-    border: none;
-    width: fit-content;
-    background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-    background-color: #ff79d9;
-    border-radius: 27px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: $typo__medium;
-    font-size: 14px;
-    padding: 14px 26px;
-    .btn__explore:hover {
-        background: linear-gradient(to bottom, #9256dc 5%, #ff79d9 100%);
-        background-color: #9256dc;
-        .btn__explore:active {
-            position: relative;
-            top: 1px;
-        }
-    }
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.btn__explore, .btn__order {
+    @include box__shadow;
+    @include btn__deco;
 }

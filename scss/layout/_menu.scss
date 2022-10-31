@@ -1,28 +1,128 @@
 @import '../utils/variables';
+@import '../utils/animations';
 
-.menu {
-    position: relative;
-    top: 225px;
-    background-color: $background__color;
-    border-radius: 40px 40px 0 0;
+.menu__cover__img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 22rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .menu__container {
-    width: 100%
+    position: relative;
+    background-color: $background__color;
+    border-radius: 2.5rem 2.5rem 0 0;
+    margin-top: 13rem;
+    padding-bottom: 3rem;
+        .h2__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include heart__transition;
+            }
+        .all__menus {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        .menu__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: self-end;
+            line-height: 1.5rem;
+            width: auto;
+            height: auto;
+            margin: 1.125rem;
+            background-color: $background__color--light;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            text-decoration: none;
+            overflow: hidden;
+            @include box__shadow;
+            .menu__description {
+                padding-right: 2rem;
+                .menu__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                .menu__title {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .menu__details {
+                    font-family: $typo__thin;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+                .menu__price {
+                font-family: $typo__bold;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+    }
 }
 
-.menu__item {
+.menu__item--1, .menu__item--4, .menu__item--7 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0s;
+}
+
+.menu__item--2, .menu__item--5, .menu__item--8 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0.2s;
+}
+
+.menu__item--3, .menu__item--6, .menu__item--9 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0.4s;
+}
+
+.menu__list--deserts {
+    margin-bottom: 3rem;
+}
+
+.order {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 315px;
-    height: 30px;
-    margin: 15px;
-    box-shadow: 7px 8px 10px -10px #a3a3a3;
-	background-color: $background__color--light;
-	border-radius: 12px;
-	cursor: pointer;
-	color: #666666;
-    padding: 20px 42px 16px 3px;
-	text-decoration: none;
+}
+
+.choice__confirmation {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+}
+
+.wrap__icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+
+/* Si l'écran est inférieur ou égal à */
+
+@media screen and (min-width: 1400px) {
+    .menu {
+        display: flex;
+    }
+
 }

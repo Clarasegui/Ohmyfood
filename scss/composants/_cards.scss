@@ -1,10 +1,13 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
 .card__restaurant {
     width: 330px;
     height: 210px;
     margin: 15px;
     background-color: $background__color--light;
     border-radius: 20px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    @include box__shadow;
     & img {
         object-fit: cover;
         width: 330px;
@@ -18,10 +21,7 @@
         align-items: center;
         margin-top: 8px;
     }
-    & link {
-        color: $text__color--primary;
-        text-decoration: none;
-    }
+    @include heart__transition;
 }
 
 .new__tag {

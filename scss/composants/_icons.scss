@@ -15,22 +15,6 @@
     color: $color__primary;
 }
 
-.heart {
-    font-size: 25px;
-
-}
-
-.heart:hover {
-    background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%); 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 25px;
-}
-
 .fa-arrow-left:before {
     padding-left: 20px;
 }

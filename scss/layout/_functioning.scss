@@ -14,13 +14,18 @@
     & li {
         width: 17.5rem;
         height: 1.875rem;
-        box-shadow: 7px 8px 10px -10px #a3a3a3;
+        @include box__shadow;
         background-color: $background__color;
         border-radius: 0.75rem;
         padding: 24px 37px 16px 3px;
         text-decoration: none;
         position: relative;
-    &::before {
+    & .functioning__text {
+        font-family: $typo__medium;
+        color: $text__color--primary;
+        padding-left: 45px;
+    }
+    &:before {
         content: counter(steps);
         counter-increment: steps;
         color: white;
@@ -37,9 +42,3 @@
     }
         }
     }
-
-.functioning__text {
-    font-family: $typo__medium;
-    color: $text__color--primary;
-    padding-left: 45px;
-}
