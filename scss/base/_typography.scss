@@ -28,22 +28,22 @@
 /* TITRES */
 
 h1 {
-    margin: 20px 0 15px 0;
+    margin: auto;
 }
 
 .h1__menu {
-    margin: 20px 0 15px 0;
+    margin: auto;
 }
 
 h2 {
-    font-size: 25px;
-    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
     padding: $h2__padding;
 }
 
 .h2__reservation {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 .h2__menu {
@@ -97,13 +97,4 @@ a {
 .card__restaurant__localisation {
     font-size: 13px;
     margin: $cardrestaurant__localisation__margin;
-}
-
-/* PAGES MENUS */
-
-.menu__details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 -28px 0 10px;
 }

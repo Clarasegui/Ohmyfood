@@ -1,22 +1,25 @@
-.fa-location-dot:before, .fa-map-marker-alt:before {
-    margin-left: -20px;
+.fa-location-dot:before,
+.fa-map-marker-alt:before {
+    margin-left: -1.25rem;
 }
 
 .icon__item {
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
-.fa-mobile-screen-button, .fa-list, .fa-store {
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store {
     color: #666666;
-    margin-left: 20px;
-    }
+    margin-left: 1.25rem;
+}
 
 .fa-mobile-screen-button:hover {
     color: $color__primary;
 }
 
 .fa-arrow-left:before {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .fa-utensils:before {

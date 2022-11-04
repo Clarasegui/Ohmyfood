@@ -7,9 +7,13 @@
     &:hover {
     filter: opacity(80%);
     box-shadow: 0 5px 21px 0 rgb(0 0 0 / 20%);
+    transition: transform 450ms ease-in-out;
+    }
+    &:hover{
+        transform: scale(1.1);
     }
 }
 
 .btn__order {
-    margin-top: 2rem;
+    margin: 2rem;
 }

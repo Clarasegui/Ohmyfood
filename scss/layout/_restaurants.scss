@@ -1,9 +1,22 @@
 .restaurants {
     background-color: $background__color;
-&   .restaurants__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 4rem;
-}
+
+    & .restaurants__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4rem;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media (min-width: 1224px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }

@@ -1,18 +1,14 @@
 .bloc__page {
     max-width: 768px;
     margin: 0;
-}
 
-@media screen and (max-width: 992px) {
-    .bloc__page {
-        max-width: 992px;
+    @media (min-width: 768px) {
+        max-width: 100%;
         margin: 0;
     }
-}
 
-@media screen and (max-width: 1400px) {
-    .bloc__page {
-        max-width: 1400px;
+    @media (min-width: 1224px) {
+        max-width: 100%;
         margin: 0;
     }
 }

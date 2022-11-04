@@ -2,25 +2,53 @@
 @import "../utils/variables";
 
 .card__restaurant {
-    width: 330px;
-    height: 210px;
-    margin: 15px;
+    width: 20.5rem;
+    height: 13rem;
+    margin: 1rem;
     background-color: $background__color--light;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     @include box__shadow;
+    transition: transform 450ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media (min-width: 992px) {
+        width: 33rem;
+        height: 18rem;
+    }
+
+    @media (min-width: 1224px) {
+        width: 33rem;
+        height: 18rem;
+    }
+
     & img {
         object-fit: cover;
-        width: 330px;
-        height: 151px;
+        width: 20.5rem;
+        height: 9.5rem;
         object-position: center;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 1.25rem 1.25rem 0 0;
+
+        @media (min-width: 992px) {
+            width: 33rem;
+            height: 14rem;
+        }
+
+        @media (min-width: 1224px) {
+            width: 33rem;
+            height: 14rem;
+        }
     }
+
     & .card__restaurant__description {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 8px;
+        margin-top: 0.2rem;
     }
+
     @include heart__transition;
 }
 
@@ -29,9 +57,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #008766;
-    background-color: #99E2D0;
-    width: 90px;
-    height: 30px;
+    color: $text__color--newtag;
+    background-color: $color__terciary;
+    width: 5.6rem;
+    height: 1.8rem;
     margin: $newtag__margin;
 }
