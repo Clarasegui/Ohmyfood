@@ -1,0 +1,26 @@
+@import '../../scss/utils/animations';
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    animation: 1s loader__fadein forwards;
+
+    &__spinner {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background: conic-gradient(#0000 10%, #9256db);
+        -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 11.5px), #000 0);
+        animation: 1.2s spinner linear infinite;
+        animation-iteration-count: 3;
+    }
+
+}

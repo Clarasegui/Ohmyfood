@@ -1,7 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-.card__restaurant {
+.restaurant__card {
     width: 20.5rem;
     height: 13rem;
     margin: 1rem;
@@ -9,6 +9,27 @@
     border-radius: 1.25rem;
     @include box__shadow;
     transition: transform 450ms ease-in-out;
+
+    &__tag {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text__color--newtag;
+        background-color: $color__terciary;
+        width: 5.6rem;
+        height: 1.8rem;
+        margin: $newtag__margin;
+
+        @media (min-width: 992px) {
+            margin: 0.5rem 0 0 26rem;
+        }
+
+        @media (min-width: 1224px) {
+            margin: 0.5rem 0 0 26rem;
+        }
+
+    }
 
     &:hover {
         transform: scale(1.05);
@@ -42,24 +63,21 @@
         }
     }
 
-    & .card__restaurant__description {
+    &__description {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 0.2rem;
     }
 
-    @include heart__transition;
-}
+    &__localisation {
+        font-family: $typo__thin;
+        color: $text__color--primary;
+        font-size: 13px;
+        margin: $cardrestaurant__localisation__margin;
+    }
 
-.new__tag {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text__color--newtag;
-    background-color: $color__terciary;
-    width: 5.6rem;
-    height: 1.8rem;
-    margin: $newtag__margin;
+    &__icon__heart {
+        @include heart__transition;
+    }
 }

@@ -1,13 +1,17 @@
 @import '../utils/variables';
 @import '../utils/animations';
 
-.menu__cover__img {
+/* IMAGE HEADER MENUS */
+
+.menu__header__img {
     position: absolute;
     max-width: 100%;
     max-height: 22rem;
     width: 100%;
     object-fit: cover;
 }
+
+/* MENUS */
 
 .menu__container {
     position: relative;
@@ -16,15 +20,16 @@
     border-radius: 2.5rem 2.5rem 0 0;
     margin-top: -4rem;
 
-    & .h2__menu {
+    & .menu__h1 {
+        font-family: $typo__menu__title;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem;
         @include heart__transition;
     }
 
     & .all__menus {
-        width: 100%;
         position: relative;
         z-index: 1;
 
@@ -42,86 +47,76 @@
             }
         }
 
-        .menu__item--1 {
-            opacity: 0;
-            animation: Slideup 1.5s forwards;
-            -webkit-animation-delay: 0s;
+        .h2__menu {
+            font-family: "Roboto-Thin";
+            color: #7e7e7e;
+            border-bottom: 3px solid #99E2D0;
+            width: 37px;
+            margin: 2.5rem 0 0 1rem;
+            padding: 0 0 6px;
+            font-size: 15px;
         }
 
-        .menu__item--2 {
-            opacity: 0;
-            animation: Slideup 1.5s forwards;
-            -webkit-animation-delay: 0.2s;
-        }
+    }
+}
 
-        .menu__item--3 {
-            opacity: 0;
-            animation: Slideup 1.5s forwards;
-            -webkit-animation-delay: 0.4s;
-        }
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    line-height: 1.5rem;
+    width: 20rem;
+    height: auto;
+    margin: 1.125rem;
+    background-color: $background__color--light;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    overflow: hidden;
+    @include box__shadow;
 
-        .menu__item--4 {
-            opacity: 0;
-            animation: Slideup 1.5s forwards;
-            -webkit-animation-delay: 0.6s;
-        }
+    @media (min-width: 1224px) {
+        width: 23rem;
     }
 
-    & .menu__item {
+    &__info {
+        padding: 0.4rem;
+        max-width: 100%;
+        overflow: hidden;
+        flex: 1;
         display: flex;
         justify-content: space-between;
-        align-items: self-end;
-        line-height: 1.5rem;
-        width: auto;
-        height: auto;
-        margin: 1.125rem;
-        background-color: $background__color--light;
-        border-radius: 0.75rem;
-        cursor: pointer;
-        overflow: hidden;
-        @include box__shadow;
-
-        & .menu__info {
-            padding: 0.4rem;
-            max-width: 100%;
-            overflow: hidden;
-            flex: 1;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        & .menu__description {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 20rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        & .menu__title {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        & .menu__details {
-            margin: 0 0 0 10px;
-            font-family: $typo__thin;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        & .menu__price {
-            font-family: $typo__bold;
-            display: flex;
-            align-items: flex-end;
-            padding-right: 0.3rem;
-        }
-
     }
 
-    & .choice__confirmation {
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__details {
+        margin: 0 0 0 10px;
+        font-family: $typo__thin;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price {
+        font-family: $typo__bold;
+        display: flex;
+        align-items: flex-end;
+        padding-right: 0.3rem;
+    }
+
+    &__confirmation {
         background-color: $color__terciary;
         margin-right: -80px;
         width: 5rem;
@@ -132,15 +127,7 @@
         transition-duration: .5s;
     }
 
-    & :hover+.choice__confirmation {
-        margin-right: 0;
-
-        & .wrap__icon {
-            transform: rotate(0deg);
-        }
-    }
-
-    & .wrap__icon {
+    &__wrap__icon {
         height: 1.6rem;
         width: 1.6rem;
         background-color: #fff;
@@ -151,17 +138,45 @@
         transform: rotate(270deg);
         transition-duration: 0.5s;
 
-        .menu__item--icon {
+        &--color {
             color: $color__terciary;
         }
     }
 
+    &:hover &__wrap__icon {
+        transform: rotate(0deg);
+    }
+
+    &:hover &__confirmation {
+        margin-right: 0;
+    }
+
 }
 
-.choice__confirmation {
-    &:hover {
-        margin-right: 0px;
-    }
+/* ANIMATION APPARITION MENUS */
+
+.menu__item--1 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0s;
+}
+
+.menu__item--2 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0.2s;
+}
+
+.menu__item--3 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0.4s;
+}
+
+.menu__item--4 {
+    opacity: 0;
+    animation: Slideup 1.5s forwards;
+    -webkit-animation-delay: 0.6s;
 }
 
 .order {
