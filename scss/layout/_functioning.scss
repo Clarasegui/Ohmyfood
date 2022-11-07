@@ -8,6 +8,11 @@
     height: 18rem;
     padding: 2rem;
 
+    @media (min-width: 992px) {
+        flex-direction: row;
+        height: 7rem;
+    }
+
     @media (min-width: 1224px) {
         flex-direction: row;
         height: 10rem;
@@ -26,6 +31,10 @@
         padding: 1.5rem 2rem 1rem 1rem;
         text-decoration: none;
         position: relative;
+
+        @media (min-width: 992px) {
+            width: 15rem;
+        }
 
         @media (min-width: 1224px) {
             width: 20rem;
@@ -52,6 +61,13 @@
         font-family: $typo__medium;
         color: $text__color--primary;
         padding-left: 3rem;
+
+        @media (min-width: 992px) {
+            padding-left: 1rem;
+        }
+    
     }
+
+    
 
 }

@@ -10,6 +10,11 @@
     @include box__shadow;
     transition: transform 450ms ease-in-out;
 
+    @media (min-width: 1224px) {
+        width: 33rem;
+        height: 18rem;
+    }
+
     &__tag {
         position: absolute;
         display: flex;
@@ -22,7 +27,7 @@
         margin: $newtag__margin;
 
         @media (min-width: 992px) {
-            margin: 0.5rem 0 0 26rem;
+            margin: 0.5rem 0 0 14rem;
         }
 
         @media (min-width: 1224px) {
@@ -35,16 +40,6 @@
         transform: scale(1.05);
     }
 
-    @media (min-width: 992px) {
-        width: 33rem;
-        height: 18rem;
-    }
-
-    @media (min-width: 1224px) {
-        width: 33rem;
-        height: 18rem;
-    }
-
     & img {
         object-fit: cover;
         width: 20.5rem;
@@ -53,8 +48,8 @@
         border-radius: 1.25rem 1.25rem 0 0;
 
         @media (min-width: 992px) {
-            width: 33rem;
-            height: 14rem;
+            width: 20.5rem;
+            height: 9.5rem;
         }
 
         @media (min-width: 1224px) {
