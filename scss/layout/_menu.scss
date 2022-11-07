@@ -30,24 +30,33 @@
     }
 
     & .all__menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
         z-index: 1;
 
+        @media (min-width: 992px) {
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         @media (min-width: 1224px) {
-            display: flex;
+            flex-direction: row;
             justify-content: space-around;
             align-items: flex-start;
         }
 
-        .menu__list--deserts,
-        .menu__list--plates,
-        .menu__list--entries {
+        .menu__list__deserts,
+        .menu__list__plates,
+        .menu__list__entries {
             @media (min-width: 1224px) {
                 width: 25rem;
             }
         }
 
-        .h2__menu {
+        .menu__h2 {
             font-family: "Roboto-Thin";
             color: #7e7e7e;
             border-bottom: 3px solid #99E2D0;
@@ -62,8 +71,8 @@
 
 .menu__item {
     display: flex;
-    justify-content: space-between;
-    align-items: self-end;
+    justify-content: space-around;
+    align-items: flex-start;
     line-height: 1.5rem;
     width: 20rem;
     height: auto;
@@ -178,6 +187,8 @@
     animation: Slideup 1.5s forwards;
     -webkit-animation-delay: 0.6s;
 }
+
+/* BOUTON COMMANDER */
 
 .order {
     display: flex;

@@ -1,5 +1,3 @@
-@import '../utils/variables';
-
 @font-face {
     font-family: "Roboto-Regular";
     src: url('../fonts/Roboto-Regular') format('truetype');
@@ -23,29 +21,4 @@
 @font-face {
     font-family: "Shrikhand-Regular";
     src: url('../fonts/Shrikhand-Regular') format('truetype');
-}
-
-
-.h1__reservation {
-    text-align: center;
-    padding-top: 2rem;
-}
-
-h3 {
-    color: $text__color--primary;
-    text-decoration: none;
-    font-size: 15px;
-    margin: $h3__margin;
-}
-
-h3:link {
-    color: $text__color--primary;
-    text-decoration: none;
-}
-
-h4 {
-    display: block;
-    font-family: $typo__bold;
-    color: $text__color--primary;
-    margin: 0 0 0 10px;
 }

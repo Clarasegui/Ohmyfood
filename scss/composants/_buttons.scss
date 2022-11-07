@@ -4,12 +4,6 @@
 .explore__btn, .order__btn {
     @include box__shadow;
     @include btn__deco;
-    transition: transform 450ms ease-in-out;
-    &:hover {
-    filter: opacity(80%);
-    box-shadow: 0 5px 21px 0 rgb(0 0 0 / 20%);
-    transform: scale(1.1);
-    }
 }
 
 .order__btn {
