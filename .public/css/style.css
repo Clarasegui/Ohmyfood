@@ -172,19 +172,19 @@
 }
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("../../fonts/Roboto-Thin") format("truetype");
+  src: url("../../fonts/Roboto-Thin.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("../../fonts/Roboto-Medium") format("truetype");
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("../../fonts/Roboto-Bold") format("truetype");
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("../../fonts/Shrikhand-Regular") format("truetype");
+  src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
 /* POLICES DE CHARACTERES */
 /* COULEURS */
