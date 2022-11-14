@@ -151,7 +151,7 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   padding: 14px 26px;
   transition: all 450ms ease-in-out;
@@ -191,7 +191,7 @@
 /* PADDING & MARGIN */
 body {
   margin: 0;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   color: #000000;
   scroll-behavior: smooth;
   max-width: 1224px;
@@ -233,7 +233,7 @@ h3:link {
 
 h4 {
   display: block;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   color: #000000;
   margin: 0 0 0 10px;
 }
@@ -270,7 +270,7 @@ a {
   box-shadow: inset 0px 6px 13px -6px rgba(0, 0, 0, 0.31);
 }
 .city__text {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 16px;
   color: #353535;
 }
@@ -323,7 +323,7 @@ a {
   padding-top: 2rem;
 }
 .explore__description {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto-Thin", sans-serif;
   color: #000000;
   display: block;
   text-align: center;
@@ -391,7 +391,7 @@ a {
   left: -0.75rem;
 }
 .functioning__list__text {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", sans-serif;
   color: #000000;
   padding-left: 3rem;
 }
@@ -472,7 +472,7 @@ a {
   margin-top: 0.2rem;
 }
 .restaurant__card__localisation {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto-Thin", sans-serif;
   color: #000000;
   font-size: 13px;
   margin: 0.2rem 0 0 0.5rem;
@@ -573,7 +573,7 @@ a {
   margin-top: -4rem;
 }
 .menu__container .menu__h1 {
-  font-family: "Shrikhand-Regular";
+  font-family: "Shrikhand-Regular", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -672,12 +672,12 @@ a {
 }
 .menu__item__details {
   margin: 0 0 0 10px;
-  font-family: "Roboto-Thin";
+  font-family: "Roboto-Thin", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__item__price {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Bold", sans-serif;
   display: flex;
   align-items: flex-end;
   padding-right: 0.3rem;
