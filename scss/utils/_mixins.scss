@@ -32,17 +32,14 @@
 @mixin heart__transition {
     .fa-heart {
         font-size: 25px;
-
-        &:hover {
+        &:active {
             cursor: pointer;
             background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-            background-size: 100%;
+            font-weight: 900;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
-            font-weight: 900;
-            font-size: 25px;
         }
     }
 }
