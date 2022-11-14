@@ -1,3 +1,26 @@
+/* POLICES DE CHARACTERES */
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("../fonts/Shrikhand-Regular") format("truetype");
+}
+
 /* APPARITION MENU */
 @keyframes Slideup {
   0% {
@@ -139,7 +162,6 @@
 /* OMBRE PORTEE */
 /* DECORATION DES BOUTONS */
 /* REMPLISSAGE DE L'ICONE COEUR */
-/* POLICES DE CHARACTERES */
 /* COULEURS */
 /* PADDING & MARGIN */
 .explore__btn, .order__btn {
@@ -167,26 +189,7 @@
   margin: 2rem;
 }
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto-Regular") format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Thin";
-  src: url("../fonts/Roboto-Thin") format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Medium";
-  src: url("../fonts/Roboto-Medium") format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../fonts/Roboto-Bold") format("truetype");
-}
-@font-face {
-  font-family: "Shrikhand-Regular";
-  src: url("../fonts/Shrikhand-Regular") format("truetype");
-}
+
 /* POLICES DE CHARACTERES */
 /* COULEURS */
 /* PADDING & MARGIN */
