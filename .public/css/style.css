@@ -52,8 +52,11 @@
   }
 }
 @keyframes spinner {
-  to {
-    transform: rotate(1turn);
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .loader {
@@ -75,7 +78,7 @@
   border-radius: 50%;
   background: conic-gradient(rgba(0, 0, 0, 0) 10%, #9256db);
   -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 11.5px), #000 0);
-  animation: spinner linear infinite;
+  animation: spinner 2s linear infinite;
 }
 
 /* POLICES DE CHARACTERES */
@@ -115,8 +118,11 @@
   }
 }
 @keyframes spinner {
-  to {
-    transform: rotate(1turn);
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* OMBRE PORTEE */
@@ -214,6 +220,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.5rem;
   margin: 0 0 0.5rem 0;
   padding: 3rem 2rem 0.5rem 1rem;
@@ -480,7 +487,7 @@ a {
 .restaurant__card__icon__heart .fa-heart {
   font-size: 25px;
 }
-.restaurant__card__icon__heart .fa-heart:active {
+.restaurant__card__icon__heart .fa-heart:hover {
   cursor: pointer;
   background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   font-weight: 900;
@@ -551,8 +558,11 @@ a {
   }
 }
 @keyframes spinner {
-  to {
-    transform: rotate(1turn);
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* IMAGE HEADER MENUS */
@@ -582,7 +592,7 @@ a {
 .menu__container .menu__h1 .fa-heart {
   font-size: 25px;
 }
-.menu__container .menu__h1 .fa-heart:active {
+.menu__container .menu__h1 .fa-heart:hover {
   cursor: pointer;
   background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   font-weight: 900;

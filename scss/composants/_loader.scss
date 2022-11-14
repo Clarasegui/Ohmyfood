@@ -1,4 +1,4 @@
-@import '../../scss/utils/animations';
+@import '../utils/animations';
 
 .loader {
     position: fixed;
@@ -19,7 +19,7 @@
         border-radius: 50%;
         background: conic-gradient(#0000 10%, #9256db);
         -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 11.5px), #000 0);
-        animation: spinner linear infinite;
+        animation: spinner 2s linear infinite;
     }
 
 }
