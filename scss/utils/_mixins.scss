@@ -32,7 +32,7 @@
 @mixin heart__transition {
     .fa-heart {
         font-size: 25px;
-        &:hover {
+        &:focus {
             cursor: pointer;
             background-image: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
             font-weight: 900;
